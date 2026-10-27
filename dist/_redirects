@@ -1,0 +1,2 @@
+# Keep real static files and route index documents first; route app paths through the portfolio shell.
+/*    /index.html   200

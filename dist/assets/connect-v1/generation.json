@@ -1,0 +1,72 @@
+{
+  "generation": "Built-in image generation; one separate generation per image, identity reference only; new animation.",
+  "frames": {
+    "neutral": {
+      "source": "exec-c9455572-c008-43b6-9f66-36ed24496e60.png",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "linkedin-wave-1": {
+      "source": "exec-c10431ca-dc37-4e4e-bc7c-238bcf8b6eda.png",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "linkedin-wave-2": {
+      "source": "exec-72a3b9d2-40b9-442f-be8f-b1d4a2493ad2.png",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "email-open": {
+      "source": "exec-da6cf15c-0972-498f-82f0-a45afcbcca78.png",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "email-blink": {
+      "source": "exec-7a59c289-36f4-4195-b5b0-687e8619abc5.png",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "whatsapp-open": {
+      "source": "exec-20b00bbe-7455-4469-a4bc-8cbcc39fb769.png",
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    "whatsapp-blink": {
+      "source": "exec-170018af-3ef4-4e2e-943b-7b6c3a06b5bb.png",
+      "size": [
+        1024,
+        1536
+      ]
+    }
+  },
+  "prompt_set": {
+    "shared": "Preserve character identity, full body, outfit, proportions, baseline, lighting and transparent canvas; one standalone high-quality 3D pose per generation, no text or background.",
+    "neutral": "Front-facing gentle smile, hands resting down.",
+    "linkedin-wave-1": "Look viewer-left, raise hand for small wave.",
+    "linkedin-wave-2": "Same wave, wrist tilted outward 12 degrees.",
+    "email-open": "Hold cream envelope with plum flap at chest height, curious smile.",
+    "email-blink": "Same envelope pose, subtle closed eyelids.",
+    "whatsapp-open": "Hold dark smartphone at lower chest, glance down gently.",
+    "whatsapp-blink": "Same phone pose, subtle closed eyelids.",
+    "neutral-smile": "Preserve full-body identity, pose and framing; change facial expression to a warm natural smile with a glimpse of upper teeth.",
+    "neutral-blink": "Exact smiling pose with only eyelids softly closed; matched idle blink frame.",
+    "neutral-closed-smile": "Precise facial edit: soft closed-mouth smile, lips together, gently raised corners and cheeks, no visible teeth. Preserve identity, full-body pose, framing and transparency.",
+    "neutral-closed-blink": "Matched closed-mouth smile with only eyelids closed naturally. Preserve full-body pose, framing and transparency."
+  },
+  "active_idle_frames": [
+    "neutral-closed-smile.webp",
+    "neutral-closed-blink.webp"
+  ]
+}

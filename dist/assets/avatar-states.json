@@ -1,0 +1,25 @@
+{
+  "character": "Shruti",
+  "visualReference": "User-supplied avatar reference images and Figma avatar board",
+  "states": [
+    { "id": "intro-speaking-video", "file": "https://d8j0ntlcm91z4.cloudfront.net/user_3HGZD0LKCjtuivCHwrpylyAJpwf/hf_20261001_113913_3f9d5211-a66c-4d7e-906e-bf9397dbfaad.mp4", "scene": "Meet Shruti", "action": "Turns from behind with a hair flip on the opening greeting, then faces front with hand gestures, expressive eyes and a warm smile", "source": "Generated with Seedance 2.0 using the supplied avatar reference and Ainsley audio as lip-sync reference; clean cream background requested" },
+    { "id": "gateway-fingertips", "file": "gateway-frame-01-fingertips.webp", "scene": "Landing gateway", "action": "Fingers hold the right edge of the page; the resting pose before a greeting", "source": "Generated to match the shared gateway composition; source PNG retained" },
+    { "id": "gateway-curious", "file": "gateway-frame-02-curious-peek.webp", "scene": "Landing gateway", "action": "Head tilts around the same edge while the hand stays registered", "source": "Generated from the supplied avatar direction; source PNG retained" },
+    { "id": "gateway-curious-left", "file": "gateway-frame-02-curious-left.webp", "scene": "Résumé and Connect hover", "action": "Same edge-peeking composition with gaze directed left toward the navigation", "source": "Generated as a dedicated transparent gaze pose at the same 1024 × 1536 frame size" },
+    { "id": "gateway-happy", "file": "gateway-frame-03-happy-smile.webp", "scene": "Landing gateway invitation", "action": "Wide toothy smile as Shruti says hello", "source": "Generated from the supplied avatar direction; source PNG retained" },
+    { "id": "peek", "file": "avatar-peek.png", "scene": "Opening", "action": "Peeks from the page edge; head and fingertips visible", "source": "Generated from user reference" },
+    { "id": "hello", "file": "avatar-wave.png", "scene": "Opening and ending", "action": "Small, tentative hello wave", "source": "Generated from user reference" },
+    { "id": "present", "file": "avatar-intro.webp", "scene": "Introduction, About and ending", "action": "Settled standing pose with camera and backpack", "source": "Existing project asset" },
+    { "id": "camera", "file": "avatar-camera.webp", "scene": "NIFT", "action": "Looks through camera", "source": "Existing project asset, based on supplied avatar direction" },
+    { "id": "travel", "file": "avatar-travel.webp", "scene": "Chandigarh and Bengaluru", "action": "Travels with ticket and luggage", "source": "Existing project asset, based on supplied avatar direction" },
+    { "id": "travelStep", "file": "avatar-travel-step.png", "scene": "Chandigarh and Bengaluru", "action": "Alternate full-body luggage stride", "source": "Generated from user reference" },
+    { "id": "presentWork", "file": "avatar-present.png", "scene": "Sant Ram’s and JAZAA introduction", "action": "Presents visual work to the visitor", "source": "Generated from user reference" },
+    { "id": "speaking", "file": "avatar-speaking.png", "scene": "Narration across professional chapters", "action": "Speaks with a small open conversational gesture", "source": "Generated from user reference" },
+    { "id": "research", "file": "avatar-research-new.png", "scene": "Janitri research", "action": "Studies notes and writes", "source": "Generated from user reference" },
+    { "id": "blankCanvas", "file": "avatar-laptop.png", "scene": "AETHER introduction", "action": "Sits beside a blank laptop and considers an open canvas", "source": "Generated from user reference" },
+    { "id": "tablet", "file": "avatar-tablet.webp", "scene": "Matera preview", "action": "Presents tablet", "source": "Existing project asset, based on supplied avatar direction" },
+    { "id": "walking", "file": "avatar-walk.webp", "scene": "Journey transitions", "action": "Walking with camera and dog reference", "source": "Existing project asset" },
+    { "id": "research-composite", "file": "avatar-research.webp", "scene": "Desk / Janitri exploration", "action": "Desk working scene with dog reference", "source": "Existing project asset" }
+  ],
+  "addingAState": "Add a stable state id and asset file here, then register the state in app.js avatarStates. Prefer transparent PNG/WebP character cutouts with consistent full-body framing and anchor points."
+}

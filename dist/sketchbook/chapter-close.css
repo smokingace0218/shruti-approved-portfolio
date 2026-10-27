@@ -1,0 +1,11 @@
+/* Shared close control for every chapter and contact panel. */
+#paper .close,#nift-map .chapter-close,#snitch-game .chapter-close,#connect-card #close-connect{
+  box-sizing:border-box;width:44px;height:44px;min-width:44px;min-height:44px;
+  padding:0;display:grid;place-items:center;border:1px solid #d6b78a;border-radius:50%;
+  background:#4d3027;color:#f9ebcf;box-shadow:0 3px 12px #3b1f1b55;
+  font:400 28px/1 Georgia,serif;text-align:center;cursor:pointer;z-index:10;
+}
+#paper .close,#paper[data-kind=wanted] .close{position:sticky;float:right;top:14px;right:14px;margin:14px 14px -58px 0}
+#nift-map .map-fold .chapter-close,#nift-map .map-sheet .chapter-close{position:absolute!important;top:14px!important;right:14px!important;left:auto!important;float:none;margin:0;transform:none!important}
+#snitch-game .chapter-close,#connect-card #close-connect{position:absolute;top:14px;right:14px;margin:0}
+#paper .close:hover,#nift-map .chapter-close:hover,#snitch-game .chapter-close:hover,#connect-card #close-connect:hover{background:#684337}

@@ -1,0 +1,24 @@
+{
+  "video": {
+    "provider": "Higgsfield",
+    "model": "Seedance 2.0",
+    "jobId": "3f9d5211-a66c-4d7e-906e-bf9397dbfaad",
+    "durationRequestedSeconds": 15,
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3HGZD0LKCjtuivCHwrpylyAJpwf/hf_20261001_113913_3f9d5211-a66c-4d7e-906e-bf9397dbfaad.mp4"
+  },
+  "narration": {
+    "provider": "Higgsfield",
+    "model": "Seed Audio 1.0",
+    "voice": "Ainsley",
+    "voiceId": "731b4ffe-e95e-59f4-8c00-81608936091f",
+    "jobId": "54bc9ee3-38d4-4a14-916d-cc21ceeddbf6",
+    "text": "What's up? Hii, I'm Shruti. I like asking questions, understanding people, and making things work better. Somewhere along the way, I got into UI/UX design.",
+    "url": "https://d8j0ntlcm91z4.cloudfront.net/user_3HGZD0LKCjtuivCHwrpylyAJpwf/hf_20261001_210437_54bc9ee3-38d4-4a14-916d-cc21ceeddbf6.wav"
+  },
+  "websitePlayback": {
+    "videoUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3HGZD0LKCjtuivCHwrpylyAJpwf/f690f897-a5f5-4ccb-9bcb-192939d117af.mp4",
+    "posterUrl": "https://d2ol7oe51mr4n9.cloudfront.net/user_3HGZD0LKCjtuivCHwrpylyAJpwf/ff287a48-2da0-4e6e-ab9c-d777297ed19c.jpg",
+    "audio": "The video is muted. A revised standalone Ainsley take says: What's up? Hii, I'm Shruti. I like asking questions, understanding people, and making things work better. Somewhere along the way, I got into UI/UX design. Playback begins 1.8 seconds after the video starts, after the turn to camera.",
+    "poster": "Extracted from the first frame of the website playback video."
+  }
+}

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      // A new visit opens the storybook first. Once its final page hands off,
+      // keep the portfolio landing available for the rest of this tab session.
+      try {
+        if (location.pathname === '/' && sessionStorage.getItem('storybook-preview-seen') !== '1') {
+          location.replace('/sketchbook/');
+        }
+      } catch (_) {}
+    </script>
+    <meta name="theme-color" content="#f5f1e9" />
+    <meta name="description" content="Come along with Shruti as she notices, makes, questions and designs." />
+    <title>Shruti — Come with me</title>
+    <link rel="preload" as="image" href="/assets/gateway-frame-01-fingertips.webp" />
+    <link rel="preload" as="image" href="/assets/gateway-frame-02-curious-peek.webp" />
+    <link rel="preload" as="image" href="/assets/gateway-frame-03-happy-smile.webp" />
+    <link rel="preload" as="image" href="/assets/chandigarh-drop-entry-aligned.png" />
+    <link rel="preload" as="image" href="/assets/chandigarh-drop-midair-aligned.png" />
+    <link rel="preload" as="image" href="/assets/chandigarh-touchdown-aligned.png" />
+    <link rel="stylesheet" href="../../styles.css?v=connect-order-20261019" />
+    <link rel="stylesheet" href="../../responsive.css?v=116-project-spacing" />
+    <script src="../../vendor/gsap.min.js" defer></script>
+    <script src="../../vendor/ScrollTrigger.min.js" defer></script>
+    <script src="../../vendor/lenis.min.js" defer></script>
+    <script src="../../motion.js?v=connect-jazaa-20261019" defer></script>
+    <script src="../../app.js?v=116-jazaa-links" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to story</a>
+    <header class="site-header" id="site-header">
+      <a class="wordmark" href="/" data-route="/" aria-label="Shruti, start the journey">SHRUTI</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="/resume" data-route="/resume">Résumé</a>
+        <a href="/portfolio" data-route="/portfolio">Portfolio</a>
+        <a href="/#about" data-route="/#about">About</a>
+        <a href="/#contact" data-route="/#contact">Say hi <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu <span aria-hidden="true">＋</span></button>
+      <nav class="mobile-menu" id="mobile-menu" hidden aria-label="More navigation">
+        <a href="/#top" data-route="/#top">Journey</a>
+        <a href="/resume" data-route="/resume">Résumé</a>
+        <a href="/portfolio" data-route="/portfolio">Portfolio</a>
+        <a href="/#about" data-route="/#about">About</a>
+        <a href="/#contact" data-route="/#contact">Say hi ↗</a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+    <div class="scene-progress" aria-hidden="true"><span id="scene-progress-fill"></span></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "gateway": {
+    "rest": "gateway-frame-01-fingertips.webp",
+    "directLinks": ["gateway-frame-01-fingertips.webp", "gateway-frame-02-curious-left.webp", "gateway-frame-01-fingertips.webp"],
+    "invitation": ["gateway-frame-01-fingertips.webp", "gateway-frame-03-happy-smile.webp"],
+    "greeting": "Ooh, hii!",
+    "registration": "Keep every pose in the same 1024 × 1536 right-edge frame. For Résumé and Connect, replace the curious image with its left-gaze asset; never stack the two curious frames or change their size, crop or position."
+  },
+  "nift": {
+    "character": "avatar-camera.webp",
+    "lensLabel": "NIFT",
+    "interaction": "Keep the camera character in the same position while the background image changes.",
+    "backgrounds": {
+      "composition": "nift-composition.jpg",
+      "colour": "nift-colour.jpg",
+      "stories": "nift-stories.jpg",
+      "details": "nift-details.jpg"
+    }
+  },
+  "journey": [
+    { "scene": "first step", "poses": ["avatar-travel.webp", "avatar-travel-step.png"], "background": "warm paper" },
+    { "scene": "listen before designing", "poses": ["avatar-research-new.png", "avatar-speaking.png"], "backgrounds": ["learning-listening.jpg", "learning-synthesis.jpg"] },
+    { "scene": "Shruti today", "poses": ["avatar-intro.webp"] }
+  ],
+  "addingAPlate": "Add an optimized landscape image and its filename to the scene data in app.js, then register the state name here. Keep the avatar as a separate transparent layer whenever it needs to stay still across background states."
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script>
+      // GitHub Pages serves this project below /portfolio/. Convert its
+      // query-based fallback back to the intended route before the app boots.
+      const portfolioBase = location.hostname.endsWith('.github.io') && (location.pathname === '/portfolio' || location.pathname.startsWith('/portfolio/')) ? '/portfolio' : '';
+      window.__PORTFOLIO_BASE__ = portfolioBase;
+      const requestedRoute = new URLSearchParams(location.search).get('route');
+      if (requestedRoute) {
+        const cleanRoute = requestedRoute.startsWith('/') && !requestedRoute.startsWith('//') ? requestedRoute : '/';
+        const destination = new URLSearchParams(new URLSearchParams(location.search).get('destinationSearch') || '');
+        destination.delete('route');
+        destination.delete('destinationSearch');
+        const query = destination.toString();
+        history.replaceState(history.state, '', `${portfolioBase}${cleanRoute}${query ? '?' + query : ''}${location.hash}`);
+      }
+      // A new visit opens the storybook first. Once its final page hands off,
+      // keep the portfolio landing available for the rest of this tab session.
+      try {
+        if (!portfolioBase && location.pathname === '/' && !requestedRoute && sessionStorage.getItem('storybook-preview-seen') !== '1') {
+          location.replace('/sketchbook/');
+        }
+      } catch (_) {}
+    </script>
+    <script>
+      if (location.pathname.replace(/\/$/, '') === '/portfolio') {
+        const pose = document.createElement('link');
+        pose.rel = 'preload'; pose.as = 'image'; pose.fetchPriority = 'high';
+        pose.href = '/assets/optimized/janitri-concepts/shruti-idea-snap-open.webp';
+        document.head.append(pose);
+      }
+    </script>
+    <meta name="theme-color" content="#f5f1e9" />
+    <meta name="description" content="Come along with Shruti as she notices, makes, questions and designs." />
+    <title>Shruti — Come with me</title>
+    <script>
+      const assetRoot = portfolioBase;
+      document.write(`
+        <link rel="preload" as="image" href="${assetRoot}/assets/gateway-frame-01-fingertips.webp">
+        <link rel="preload" as="image" href="${assetRoot}/assets/gateway-frame-02-curious-peek.webp">
+        <link rel="preload" as="image" href="${assetRoot}/assets/gateway-frame-03-happy-smile.webp">
+        <link rel="preload" as="image" href="${assetRoot}/assets/optimized/chandigarh-drop-entry-aligned.webp">
+        <link rel="preload" as="image" href="${assetRoot}/assets/optimized/chandigarh-drop-midair-aligned.webp">
+        <link rel="preload" as="image" href="${assetRoot}/assets/optimized/chandigarh-touchdown-aligned.webp">
+        <link rel="stylesheet" href="${assetRoot}/styles.css?v=connect-order-20261019">
+        <link rel="stylesheet" href="${assetRoot}/responsive.css?v=116-project-spacing">
+        <script src="${assetRoot}/vendor/gsap.min.js" defer><\/script>
+        <script src="${assetRoot}/vendor/ScrollTrigger.min.js" defer><\/script>
+        <script src="${assetRoot}/vendor/lenis.min.js" defer><\/script>
+        <script src="${assetRoot}/motion.js?v=connect-jazaa-20261019" defer><\/script>
+        <script src="${assetRoot}/app.js?v=116-jazaa-links" defer><\/script>
+      `);
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to story</a>
+    <header class="site-header" id="site-header">
+      <a class="wordmark" href="/sketchbook/" aria-label="Shruti, return to the scrapbook">SHRUTI</a>
+      <nav class="top-nav" aria-label="Main navigation">
+        <a href="/assets/shruti-kumari-resume.pdf">Résumé</a>
+        <a href="/portfolio" data-route="/portfolio">Portfolio</a>
+        <a href="/#about" data-route="/#about">About</a>
+        <a href="/contact" data-route="/contact">Say hi <span aria-hidden="true">↗</span></a>
+      </nav>
+      <button class="mobile-menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu">Menu <span aria-hidden="true">＋</span></button>
+      <nav class="mobile-menu" id="mobile-menu" hidden aria-label="More navigation">
+        <a href="/#top" data-route="/#top">Journey</a>
+        <a href="/assets/shruti-kumari-resume.pdf">Résumé</a>
+        <a href="/portfolio" data-route="/portfolio">Portfolio</a>
+        <a href="/#about" data-route="/#about">About</a>
+        <a href="/contact" data-route="/contact">Say hi ↗</a>
+      </nav>
+    </header>
+
+    <main id="main" tabindex="-1"></main>
+    <div class="scene-progress" aria-hidden="true"><span id="scene-progress-fill"></span></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

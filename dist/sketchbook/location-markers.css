@@ -1,0 +1,115 @@
+/* Location-specific signs; organisation logos remain in their original colours. */
+#world .pin.location-marker{width:48px;height:48px;padding:0;display:block;overflow:visible;filter:none;background:none;border:0;--pin-hover:0px}
+#world .pin.location-marker:hover,#world .pin.location-marker:focus-visible{--pin-hover:-3px;z-index:8}
+.location-marker .marker-group{position:absolute;left:50%;bottom:7px;width:max-content;max-width:190px;display:flex;align-items:center;flex-direction:column;gap:6px;transform:translateX(-50%);pointer-events:auto;filter:drop-shadow(0 4px 7px #07182365);transition:filter .2s}
+.location-marker .marker-group:after{content:'';width:5px;height:5px;border-radius:50%;background:#eed19a;box-shadow:0 0 10px #ffdc8d;margin-top:1px}
+.location-marker .organisation-logo{display:flex;justify-content:center;align-items:center;background:#fff9edec;border:1px solid #bca16b;border-radius:5px;padding:6px 10px;box-shadow:0 2px 7px #0002;flex:none}
+.location-marker .organisation-logo img{display:block;max-width:100%;height:auto;object-fit:contain;filter:none;mix-blend-mode:normal}
+.location-marker .logo-nift{width:178px;height:49px}.location-marker .logo-nift img{width:158px}
+.location-marker .logo-sant{width:108px;height:72px;padding:5px 9px}.location-marker .logo-sant img{width:90px}
+.location-marker .logo-janitri{width:113px;height:48px}.location-marker .logo-janitri img{width:94px}
+.location-marker .location-sign{display:flex;justify-content:center;align-items:center;gap:8px;position:relative;min-height:43px;padding:7px 12px;border:1px solid #a78a4e;border-radius:3px;flex:none;text-align:center;box-shadow:inset 0 0 0 2px #e0c38525}
+#world .location-marker strong,#world .location-marker small{display:block;margin:0;white-space:nowrap;font-style:normal;font-weight:400;letter-spacing:0;opacity:1}
+#world .location-marker small{font:7px/1.4 Georgia,serif;letter-spacing:.09em}
+#world .location-marker strong{font:400 24px/1.05 'Harry P',Georgia,serif}
+.location-marker .school-sign{background:linear-gradient(120deg,#5d4528,#372b1c);color:#f3db9f;width:178px}.school-sign .sign-crest{width:25px;height:31px;flex:none}.school-sign small{margin-top:3px!important}
+.location-marker .wandmaker-sign{background:linear-gradient(100deg,#181b19,#2b2e26);color:#d8bc7e;width:174px;display:block;padding:8px 15px}
+#world .wandmaker-sign strong{font:600 23px/.95 'Cormorant Garamond',Georgia,serif;letter-spacing:.025em}#world .wandmaker-sign small{font-size:6px;letter-spacing:.12em;margin-top:6px}
+.location-marker .hospital-sign{background:linear-gradient(130deg,#f7ecd3,#d7dfce);color:#344d42;width:182px;padding:7px 10px;gap:6px}.healer-mark{width:26px;height:29px;flex:none}#world .hospital-sign strong{font:600 22px/1.05 'Cormorant Garamond',Georgia,serif}#world .hospital-sign small{font-size:5px;letter-spacing:.065em;margin-top:4px}
+.location-marker .station-sign{width:78px;height:78px;background:radial-gradient(circle,#f6e9c8 0 61%,#bf9b58 62% 65%,#793c32 66%);border:3px solid #793c32;border-radius:50%;color:#24201a;text-align:center;padding:11px 5px 6px;box-shadow:inset 0 0 0 1px #d5b574}
+#world .station-sign small{font:600 8px/1 Georgia,serif;letter-spacing:.10em}#world .station-sign strong{font:500 37px/.95 Georgia,serif;display:flex;justify-content:center;align-items:center;gap:2px;margin-top:4px}.station-fraction{display:flex;flex-direction:column;align-items:center;font-size:15px;line-height:1}.station-fraction sup,.station-fraction sub{position:static;font:inherit;line-height:1}.station-fraction>span{width:12px;border-top:1px solid;margin:2px 0}
+.location-marker .station-title{padding:5px 10px;background:#793c32ed;border:1px solid #b99565;border-radius:3px;color:#f5e5ba;font:13px/1.15 Georgia,serif;text-align:center}
+.location-marker .ministry-sign{width:115px;display:flex;align-items:center;flex-direction:column;gap:4px;padding:8px 7px;background:linear-gradient(#1d2424ed,#10191cee);border:1px solid #a98c52;border-radius:48% 48% 6px 6px;color:#dcc591}.ministry-mark{width:54px;height:54px}#world .ministry-sign strong{font:600 8px/1.2 Georgia,serif;letter-spacing:.07em}
+.location-marker .marker-caption{font:11px/1.4 Georgia,serif;letter-spacing:.015em;text-align:center;color:#fff0d0;background:#152626ed;padding:0 10px;border:0 solid #d0af6a88;border-radius:3px;max-height:0;max-width:210px;opacity:0;overflow:hidden;transition:max-height .2s,padding .2s,opacity .2s}
+.location-marker:hover .marker-caption,.location-marker:focus-visible .marker-caption{max-height:55px;opacity:1;padding:6px 10px;border-width:1px}.location-marker:focus-visible .marker-group{outline:2px solid #fce2a2;outline-offset:5px;border-radius:5px}.location-marker:hover .marker-group{filter:drop-shadow(0 3px 7px #0005) drop-shadow(0 0 7px #ebc57935)}
+@media(max-width:700px){.location-marker .marker-group{max-width:158px;gap:5px}.location-marker .logo-nift{width:148px;height:42px}.location-marker .logo-nift img{width:130px}.location-marker .logo-sant{width:90px;height:60px}.location-marker .logo-sant img{width:76px}.location-marker .logo-janitri{width:101px;height:42px}.location-marker .logo-janitri img{width:84px}.location-marker .school-sign{width:148px}.location-marker .wandmaker-sign{width:150px}.location-marker .hospital-sign{width:158px}#world .location-marker strong{font-size:22px}#world .wandmaker-sign strong{font-size:21px}#world .hospital-sign strong{font-size:19px}.location-marker .ministry-sign{width:103px}.location-marker .station-sign{width:72px;height:72px}#world .station-sign strong{font-size:34px}.location-marker .station-title{font-size:12px}}
+@media(hover:none){.location-marker .marker-caption{max-height:48px;opacity:1;padding:4px 7px;border-width:1px;font-size:9px}.location-marker .marker-group{gap:4px}}
+@media(prefers-reduced-motion:reduce){.location-marker .marker-group,.location-marker .marker-caption{transition:none}}
+#world .school-sign small{font-size:5.4px;letter-spacing:.055em}@media(max-width:700px){#world .ministry-sign strong{font-size:7px}#world .school-sign small{font-size:4.7px}}
+.camera-travel .location-marker .marker-group{pointer-events:none}
+
+/* Restore the original drops; transparent brand-and-location cards appear on hover/focus only. */
+#world .pin.location-marker{width:48px;height:48px;display:grid;place-items:center;min-width:48px;min-height:48px;cursor:pointer}
+#world .pin.location-marker .location-drop{display:grid;place-items:center;width:36px;height:44px;background:none;border:0;color:#d9b66d;opacity:1;filter:drop-shadow(0 2px 4px #0b242855);text-shadow:none;animation:none;box-shadow:none;pointer-events:none;transition:color .2s,filter .2s}
+#world .pin.location-marker .location-drop svg{display:block;width:32px;height:42px}
+#world .pin.location-marker .marker-group{bottom:56px;gap:9px;opacity:0;visibility:hidden;pointer-events:none;transform:translateX(-50%) translateY(7px) scale(.97);transition:opacity .2s ease,transform .25s ease,visibility .2s;filter:drop-shadow(0 5px 8px #07182355)}
+#world .pin.location-marker .marker-group:after{display:none}
+#world .pin.location-marker .organisation-logo{background:transparent;border:0;border-radius:0;padding:0;box-shadow:none;overflow:visible}
+#world .pin.location-marker .organisation-logo img{filter:drop-shadow(0 0 1px #fff9) drop-shadow(0 2px 3px #07182377);object-fit:contain}
+#world .pin.location-marker .logo-nift{width:190px;height:45px}#world .pin.location-marker .logo-nift img{width:190px}
+#world .pin.location-marker .logo-sant{width:118px;height:80px}#world .pin.location-marker .logo-sant img{width:118px}
+#world .pin.location-marker .logo-janitri{width:125px;height:54px}#world .pin.location-marker .logo-janitri img{width:125px}
+#world .location-marker .location-sign strong{font:400 27px/1.1 'Harry P',Georgia,serif;letter-spacing:.025em}
+#world .location-marker .location-sign small{font:400 10px/1.2 'Harry P',Georgia,serif;letter-spacing:.025em;margin-top:4px}
+#world .location-marker .marker-caption{font:400 18px/1.2 'Harry P',Georgia,serif;max-height:55px;opacity:1;padding:5px 9px;border-width:1px;max-width:215px;white-space:normal}
+#world .location-marker .station-title{font:400 23px/1.1 'Harry P',Georgia,serif;padding:7px 12px}
+#world .location-marker .station-sign small{font:400 13px/1 'Harry P',Georgia,serif;letter-spacing:.04em}
+#world .location-marker .ministry-sign strong{font:400 15px/1.2 'Harry P',Georgia,serif;white-space:normal}.location-marker .ministry-sign{width:140px}
+#world .pin.location-marker:focus-visible .marker-group{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1)}
+#world .camera-travel .pin.location-marker .marker-group,.camera-travel .pin.location-marker .marker-group{opacity:0!important;visibility:hidden!important;pointer-events:none}
+@media(hover:hover) and (pointer:fine){#world .pin.location-marker:hover .marker-group{opacity:1;visibility:visible;transform:translateX(-50%) translateY(0) scale(1)}#world .pin.location-marker:hover .location-drop{color:#f3d79a;filter:drop-shadow(0 0 7px #e8c57977)}}
+@media(max-width:700px){#world .pin.location-marker .marker-group{bottom:54px;max-width:180px}#world .pin.location-marker .logo-nift,#world .pin.location-marker .logo-nift img{width:166px}#world .pin.location-marker .logo-nift{height:39px}#world .pin.location-marker .logo-sant,#world .pin.location-marker .logo-sant img{width:102px}#world .pin.location-marker .logo-sant{height:69px}#world .pin.location-marker .logo-janitri,#world .pin.location-marker .logo-janitri img{width:110px}#world .pin.location-marker .logo-janitri{height:47px}#world .location-marker .location-sign strong{font-size:24px}#world .location-marker .location-sign small{font-size:9px}#world .location-marker .marker-caption{font-size:16px}}
+@media(prefers-reduced-motion:reduce){#world .pin.location-marker .marker-group,#world .pin.location-marker .location-drop{transition:none}}
+
+/* NIFT and Janitri use their own identity; the platform roundel uses fixed, centred geometry. */
+#world .location-marker .nift-sign{width:178px;min-height:58px;padding:8px 12px}#world .location-marker .nift-sign strong{font-size:30px}#world .location-marker .nift-sign small{font-size:18px;letter-spacing:.025em;margin-top:4px}
+#world .location-marker .janitri-sign{width:204px;min-height:62px;padding:9px 12px}#world .location-marker .janitri-sign strong{font-size:29px}#world .location-marker .janitri-sign small{font-size:13px;line-height:1.25;white-space:normal;max-width:180px;margin:5px auto 0}
+#world .location-marker .station-sign{display:block;width:88px;height:88px;box-sizing:border-box;border:0;padding:0;background:none;box-shadow:none;border-radius:50%}.platform-roundel{display:block;width:100%;height:100%;overflow:visible}.platform-roundel text{fill:#2b251d}.platform-roundel .platform-word{font:400 13px 'Harry P',Georgia,serif;letter-spacing:.04em}.platform-roundel .platform-nine{font:400 45px Georgia,serif}.platform-roundel .platform-part{font:400 19px Georgia,serif}#world .location-marker .station-title{width:190px;max-width:190px;box-sizing:border-box;font-size:23px;white-space:normal;line-height:1.15;text-align:center;text-wrap:balance;padding:8px 12px}
+@media(max-width:700px){#world .location-marker .nift-sign{width:158px}#world .location-marker .nift-sign strong{font-size:27px}#world .location-marker .nift-sign small{font-size:17px}#world .location-marker .janitri-sign{width:182px}#world .location-marker .janitri-sign strong{font-size:26px}#world .location-marker .janitri-sign small{font-size:12px}#world .location-marker .station-sign{width:80px;height:80px}#world .location-marker .station-title{width:176px;font-size:21px}}
+
+/* Company hover cards share a clear name, tagline and transparent logo. */
+#world .location-marker .sant-sign{width:204px;min-height:62px;padding:9px 12px;border-radius:7px;background:linear-gradient(130deg,#342a20,#171c1a);color:#edd6a1}
+#world .location-marker .sant-sign strong{font-size:29px;line-height:1.1}
+#world .location-marker .sant-sign small{font-size:15px;line-height:1.25;white-space:normal}
+#world .location-marker .janitri-sign{border-radius:7px}
+#world .pin.location-marker.sant .marker-group,#world .pin.location-marker.janitri .marker-group{max-width:220px;gap:8px}
+@media(max-width:700px){#world .location-marker .sant-sign{width:182px}#world .location-marker .sant-sign strong{font-size:26px}}
+
+#world .location-marker .sant-sign small,#world .location-marker .janitri-sign small{font:400 17px/1.2 'Harry P',Georgia,serif;white-space:normal;max-width:176px;margin:5px auto 0;text-wrap:balance}#world .location-marker .sant-sign,#world .location-marker .janitri-sign{display:block;min-height:70px}
+
+/* One title/context hierarchy, shared proportions and centred text for the location cards. */
+#world .location-marker .nift-sign,#world .location-marker .sant-sign,#world .location-marker .janitri-sign,#world .location-marker .next-chapter-sign{width:204px;min-height:82px;box-sizing:border-box;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:5px;padding:11px 13px;border-radius:7px;text-align:center}
+#world .location-marker .nift-sign>span,#world .location-marker .janitri-sign>span{width:100%;display:flex;flex-direction:column;align-items:center;gap:5px}
+#world .location-marker .location-sign strong{font:400 29px/1.1 'Harry P',Georgia,serif;white-space:normal;letter-spacing:.025em;text-align:center}
+#world .location-marker .location-sign small{font:400 17px/1.2 'Harry P',Georgia,serif;white-space:normal;max-width:176px;margin:0!important;letter-spacing:.025em;text-align:center;text-wrap:balance}
+#world .location-marker .next-chapter-sign{background:linear-gradient(130deg,#342a20,#171c1a);color:#edd6a1;border:1px solid #a78a4e;box-shadow:inset 0 0 0 2px #e0c38525}
+#world .location-marker .next-chapter-sign strong{font-size:26px}
+#world .pin.location-marker .marker-group{max-width:220px;gap:0}
+@media(max-width:700px){#world .location-marker .nift-sign,#world .location-marker .sant-sign,#world .location-marker .janitri-sign,#world .location-marker .next-chapter-sign{width:182px;min-height:76px;padding:10px 12px}#world .location-marker .location-sign strong{font-size:26px}#world .location-marker .location-sign small{font-size:16px}#world .location-marker .next-chapter-sign strong{font-size:24px}}
+
+/* Right-side markers keep the complete card within the scene edge. */
+#world .pin.location-marker.sant .marker-group,#world .pin.location-marker.janitri .marker-group,#world .pin.location-marker.ministry .marker-group{left:auto;right:0;transform:translateY(7px) scale(.97)}
+#world .pin.location-marker.ministry .marker-group{top:56px;bottom:auto}
+#world .pin.location-marker.sant:is(:hover,:focus-visible) .marker-group,#world .pin.location-marker.janitri:is(:hover,:focus-visible) .marker-group,#world .pin.location-marker.ministry:is(:hover,:focus-visible) .marker-group{transform:translateY(0) scale(1)}
+/* Janitri shares the same card treatment and type hierarchy as the other chapters. */
+#world .location-marker .janitri-sign{background:linear-gradient(130deg,#342a20,#171c1a);color:#edd6a1;border:1px solid #a78a4e;box-shadow:inset 0 0 0 2px #e0c38525}
+#world .location-marker .janitri-sign strong{font:400 29px/1.1 'Harry P',Georgia,serif;letter-spacing:.025em}
+#world .location-marker .janitri-sign small{font:400 17px/1.2 'Harry P',Georgia,serif;letter-spacing:.025em}
+@media(max-width:700px){#world .location-marker .janitri-sign strong{font-size:26px}#world .location-marker .janitri-sign small{font-size:16px}}
+/* Give the Platform roundel room for the fraction and its outer ring. */
+#world .location-marker .station-sign{width:112px;height:112px;overflow:visible}
+.platform-roundel .platform-word{font-size:12px;letter-spacing:0}
+.platform-roundel .platform-nine{font-size:42px}
+.platform-roundel .platform-part{font-size:17px}
+@media(max-width:700px){#world .location-marker .station-sign{width:100px;height:100px}}
+/* The numbers share the wizarding typeface used by the Platform label. */
+.platform-roundel .platform-nine{font-family:'Harry P',Georgia,serif}
+.platform-roundel .platform-part{font-family:'Harry P',Georgia,serif}
+/* Staggered invitations: a soft halo and a gentle lift around each drop. */
+#world .pin.location-marker .location-drop{position:relative;width:42px;height:50px;animation:drop-invitation 3.8s ease-in-out infinite;filter:drop-shadow(0 2px 5px #0b242888)}
+#world .pin.location-marker .location-drop svg{position:relative;z-index:1;width:37px;height:48px}
+#world .pin.location-marker .location-drop:before{content:'';position:absolute;inset:-10px -11px;border-radius:50%;background:radial-gradient(ellipse,#ffda8b88 0%,#e9b75630 38%,transparent 72%);animation:drop-halo 3.8s ease-in-out infinite;pointer-events:none}
+#world .pin.location-marker:nth-child(2) .location-drop,#world .pin.location-marker:nth-child(2) .location-drop:before{animation-delay:-.76s}
+#world .pin.location-marker:nth-child(3) .location-drop,#world .pin.location-marker:nth-child(3) .location-drop:before{animation-delay:-1.52s}
+#world .pin.location-marker:nth-child(4) .location-drop,#world .pin.location-marker:nth-child(4) .location-drop:before{animation-delay:-2.28s}
+#world .pin.location-marker:nth-child(5) .location-drop,#world .pin.location-marker:nth-child(5) .location-drop:before{animation-delay:-3.04s}
+@keyframes drop-invitation{0%,72%,100%{transform:translateY(0)}80%{transform:translateY(-6px)}88%{transform:translateY(0)}93%{transform:translateY(-2px)}}
+@keyframes drop-halo{0%,68%,100%{opacity:.42;scale:.92}80%{opacity:1;scale:1.12}}
+#world .pin.location-marker:is(:hover,:focus-visible) .location-drop{color:#ffe6ac;filter:drop-shadow(0 0 10px #ffd476cc);animation-play-state:paused}
+#world .pin.location-marker:is(:hover,:focus-visible) .location-drop:before{opacity:1;animation:none;scale:1.16}
+#world .pin.location-marker:is(:hover,:focus-visible) .marker-group{filter:drop-shadow(0 5px 9px #071823aa) drop-shadow(0 0 12px #f2c87599)}
+@media(prefers-reduced-motion:reduce){#world .pin.location-marker .location-drop,#world .pin.location-marker .location-drop:before{animation:none}}
+/* A keyboard-focused location uses the luminous pin itself as its focus cue. */
+#world .pin.location-marker:focus-visible{outline:none}
+#world .pin.location-marker:focus-visible .marker-group{outline:none}
+#world .pin.location-marker:focus-visible .location-drop{filter:drop-shadow(0 0 4px #fff3c9) drop-shadow(0 0 12px #ffc86b);color:#fff1c9}
